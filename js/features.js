@@ -13,7 +13,7 @@ function showSectionById(id) {
 function getInputValueById(id){
     const inputValue = document.getElementById(id).value;
     const inputValueNumber = parseFloat(inputValue)
-    document.getElementById(id).value = '';
+    document.getElementById(id).value = "";
     return inputValueNumber;
 }
 
