@@ -9,27 +9,33 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+      body{
+        font-family: "Lexend", sans-serif;
+      }
       .active{
         background: #b4f461;
       }
     </style>
   </head>
   <body>
-    <header class="sticky top-0 backdrop-blur-2xl pb-10">
-      <nav class="w-full bg-[#f9f7f3] py-5">
-        <div class="navbar w-3/5 md:w-4/5 md:mx-auto ">
-          <div class="navbar-start">
-            <button class="btn btn-success"><a href="./pages/blogs.html">Blogs</a></button>
+    <header class="sticky top-0 backdrop-filter backdrop-blur-xl z-50 pb-10">
+      <nav class="w-full bg-[#f9f7f3] py-5 bg-opacity-80">
+        <div class="w-11/12 sm:w-4/5 mx-auto flex items-center justify-between">
+          <div class="">
+            <a href="./pages/blog.html"><button class="py-2 sm:py-3 px-8 sm:px-10 rounded-lg bg-[#b4f461]">Blogs</button></a>
           </div>
-          <div class="navbar-center">
-            <img class="w-10" src="images/logo.png" alt="Logo" />
-            <h3 class="font-bold text-xl px-2">Donate Bangladesh</h3>
+          <div class="flex items-center flex-col sm:flex-row">
+            <img class="w-6 sm:w-10" src="images/logo.png" alt="Logo" />
+            <h3 class="font-bold text-md sm:text-xl px-2">Donate Bangladesh</h3>
           </div>
-          <div class="navbar-end gap-1">
+          <div class="flex gap-1">
             <img class="w-5" src="./images/coin.png" alt="Coin" />
-            <h2 id="main-balance" class="font-bold">2500</h2>
+            <h2 id="main-balance" class="font-bold">5500</h2>
             <h2>BDT</h2>
           </div>
         </div>
@@ -41,14 +47,12 @@
     </header>
     <main class="w-4/5 mx-auto mt-10">
       <div id="donation-section">
-      <div
-        class="donate-noakhali w-full mx-auto border-2 border-gray-300 rounded-lg p-3 flex flex-col md:flex-row gap-2"
-      >
+      <div class="donate-noakhali w-full mx-auto border-2 border-gray-300 rounded-lg p-3 flex flex-col lg:flex-row gap-2">
         <div class="donate-img p-2">
-          <img class="w-full" src="./images/noakhali.png" alt="Donate Place Photo" />
+          <img class="w-full lg:h-full" src="./images/noakhali.png" alt="Donate Place Photo" />
         </div>
-        <div class="donate-description p-2 w-full md:w-1/2">
-          <div class="flex gap-1 bg-gray-300 p-2 rounded-lg w-4/12 md:w-3/12 justify-center">
+        <div class="donate-description p-2 w-full lg:w-1/2">
+          <div class="flex gap-1 bg-gray-300 p-2 rounded-lg w-5/12 sm:w-3/12 lg:w-5/12 justify-center">
             <img class="w-5" src="./images/coin.png" alt="Coin" />
             <h2 id="noakhali-donate-amount" class="noakhali-amount font-bold">
               00
@@ -70,9 +74,9 @@
           <div class="mt-10">
             <input
               id="noakhali-donate-input"
-              type="text"
+              type="number"
               placeholder="Write Donation Amount"
-              class="input input-bordered w-full max-w-xs"
+              class="input input-bordered w-full"
             />
             <br />
             <!-- Open the modal using ID.showModal() method -->
@@ -100,13 +104,13 @@
       </div>
 
 
-      <div class="donate-feni w-full mx-auto border-2 border-gray-300 rounded-lg p-3 flex flex-col md:flex-row gap-2 mt-10">
+      <div class="donate-feni w-full mx-auto border-2 border-gray-300 rounded-lg p-3 flex flex-col lg:flex-row gap-2 mt-10">
         <div class="donate-img p-2">
-          <img class="w-full h-full" src="./images/feni.png" alt="Donate Place Photo" />
+          <img class="w-full lg:h-full" src="./images/feni.png" alt="Donate Place Photo" />
         </div>
-        <div class="donate-description p-2 w-full md:w-1/2">
+        <div class="donate-description p-2 w-full lg:w-1/2">
           <div
-            class="flex gap-1 bg-gray-300 p-2 rounded-lg w-4/12 md:w-3/12 justify-center"
+            class="flex gap-1 bg-gray-300 p-2 rounded-lg w-5/12 sm:w-3/12 lg:w-5/12 justify-center"
           >
             <img class="w-5" src="./images/coin.png" alt="Coin" />
             <h2 id="feni-donate-amount" class="feni-amount font-bold">
@@ -124,9 +128,9 @@
           <div class="mt-10">
             <input
               id="feni-donate-input"
-              type="text"
+              type="number"
               placeholder="Write Donation Amount"
-              class="input input-bordered w-full max-w-xs"
+              class="input input-bordered w-full"
             />
             <br />
             <!-- Open the modal using ID.showModal() method -->
@@ -154,13 +158,13 @@
       </div>
 
 
-      <div class="donate-quata-movement w-full mx-auto border-2 border-gray-300 rounded-lg p-3 flex flex-col md:flex-row gap-2 mt-10">
+      <div class="donate-quata-movement w-full mx-auto border-2 border-gray-300 rounded-lg p-3 flex flex-col lg:flex-row gap-2 mt-10">
         <div class="donate-img p-2">
-          <img class="w-full h-full" src="./images/quota-protest.png" alt="Donate Place Photo" />
+          <img class="w-full lg:h-full" src="./images/quota-protest.png" alt="Donate Place Photo" />
         </div>
-        <div class="donate-description p-2 w-full md:w-1/2">
+        <div class="donate-description p-2 w-full lg:w-1/2">
           <div
-            class="flex gap-1 bg-gray-300 p-2 rounded-lg w-4/12 md:w-3/12 justify-center"
+            class="flex gap-1 bg-gray-300 p-2 rounded-lg w-5/12 sm:w-3/12 lg:w-5/12 justify-center"
           >
             <img class="w-5" src="./images/coin.png" alt="Coin" />
             <h2 id="quata-movement-donate-amount" class="quata-movement-amount font-bold">
@@ -178,9 +182,9 @@
           <div class="mt-10">
             <input
               id="quata-movement-donate-input"
-              type="text"
+              type="number"
               placeholder="Write Donation Amount"
-              class="input input-bordered w-full max-w-xs"
+              class="input input-bordered w-full"
             />
             <br />
             <!-- Open the modal using ID.showModal() method -->
