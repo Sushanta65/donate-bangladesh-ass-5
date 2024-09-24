@@ -22,15 +22,15 @@
   <body>
     <header>
       <nav class="w-full bg-[#f9f7f3] py-5 bg-opacity-80">
-        <div class="navbar w-3/5 md:w-4/5 md:mx-auto ">
-          <div class="navbar-start">
-            <a href="../index.html"><button class="py-3 px-10 rounded-lg bg-[#b4f461]">Home</button></a>
+        <div class="w-11/12 sm:w-4/5 mx-auto flex items-center justify-between">
+          <div class="">
+            <a href="../index.html"><button class="py-2 sm:py-3 px-5 sm:px-10 rounded-lg bg-[#b4f461]">Home</button></a>
           </div>
-          <div class="navbar-center">
-            <img class="w-10" src="../images/logo.png" alt="Logo" />
-            <h3 class="font-bold text-xl px-2">Donate Bangladesh</h3>
+          <div class="flex items-center flex-col sm:flex-row">
+            <img class="w-6 sm:w-10" src="../images/logo.png" alt="Logo" />
+            <h3 class="font-bold text-sm sm:text-xl px-2">Donate Bangladesh</h3>
           </div>
-          <div class="navbar-end gap-1">
+          <div class="flex gap-1">
             <img class="w-5" src="../images/coin.png" alt="Coin" />
             <h2 id="main-balance" class="font-bold">5500</h2>
             <h2>BDT</h2>
@@ -80,7 +80,7 @@
         </div>
 
         <div class="collapse collapse-arrow border rounded-none border-gray-400">
-          <input type="radio" name="my-accordion-2" checked="checked" />
+          <input type="radio" name="my-accordion-2"/>
           <div class="collapse-title text-xl font-medium"><h2 class="text-lg sm:text-xl">How do you manipulate an element's attributes and styles using the DOM?</h2></div>
           <div class="collapse-content">
             <p>First we have to select the element by usign document method <span class="bg-gray-200">getElementsByTagName</span>  or <span class="bg-gray-200">getElementsByClassName</span> or <span class="bg-gray-200">getElementById</span> or <span class="bg-gray-200">querySelector</span> or <span class="bg-gray-200">querySelectorAll</span>. Then set attributes using setAttribute and to change values and its style properties directly. Then we can manipulate the element's attributes and styles using DOM.</p>

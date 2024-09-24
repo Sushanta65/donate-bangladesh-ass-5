@@ -13,9 +13,22 @@ function showSectionById(id) {
 function getInputValueById(id){
     const inputValue = document.getElementById(id).value;
     const inputValueNumber = parseFloat(inputValue)
+    document.getElementById(id).value = '';
     return inputValueNumber;
 }
 
+
+//Calculate
+
+function calculateDonationAmount(donateFor, donateAmount, accountBalance, setDonatedAmount){
+  
+  const newBalance = accountBalance - donateAmount;
+  const donatedAmount = donateFor + donateAmount;
+
+  document.getElementById("main-balance").innerText = newBalance;
+  document.getElementById(setDonatedAmount).innerText = donatedAmount;
+  
+}
 
 //Add to history Section
 
@@ -32,3 +45,5 @@ function addTransactionToHistory(idOfDonateTitle, donateAmount){
         document.getElementById('history-section').appendChild(transactionHistory)
         document.getElementById('no-transaction').classList.add('hidden')
 }
+
+
